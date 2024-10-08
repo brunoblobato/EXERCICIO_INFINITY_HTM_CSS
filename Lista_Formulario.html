@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <h1>Formulário de Cadastro</h1>
+    <form action="#" method="post">
+        
+        <!-- Campo de texto para o usuário inserir informações -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <!-- Campo de password para o usuário inserir senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <!-- Campo de e-mail para o usuário inserir um endereço de e-mail válido -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Lista com 5 checkboxes para o usuário selecionar mais de uma opção -->
+        <label>Selecione suas áreas de interesse:</label><br>
+        <input type="checkbox" id="opcao1" name="interesse" value="opcao1">
+        <label for="opcao1">HTML</label><br>
+
+        <input type="checkbox" id="opcao2" name="interesse" value="opcao2">
+        <label for="opcao2">JavaScript</label><br>
+
+        <input type="checkbox" id="opcao3" name="interesse" value="opcao3">
+        <label for="opcao3">Python</label><br>
+
+        <input type="checkbox" id="opcao4" name="interesse" value="opcao4">
+        <label for="opcao4">SQL</label><br>
+
+        <input type="checkbox" id="opcao5" name="interesse" value="opcao5">
+        <label for="opcao5">C#</label><br><br>
+
+        <!-- Radiobutton com 2 opções -->
+        <label>Escolha um tipo de plano:</label><br>
+        <input type="radio" id="plano1" name="plano" value="basico" required>
+        <label for="plano1">Básico</label><br>
+
+        <input type="radio" id="plano2" name="plano" value="premium">
+        <label for="plano2">Avançado</label><br><br>
+
+        <!-- Botão de envio (submit) -->
+        <input type="submit" value="Enviar">
+
+        <!-- Botão para limpar (reset) o formulário -->
+        <input type="reset" value="Limpar">
+
+    </form>
+
+</body>
+</html>
