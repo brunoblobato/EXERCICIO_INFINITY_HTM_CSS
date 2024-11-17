@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva com Cores</title>
+    <style>
+        /* Variáveis de cores */
+        :root {
+            --cor-fundo: #f0f8ff;
+            --cor-primaria: #2a2a2a;
+            --cor-secundaria: #ffffff;
+            --cor-texto: #2a2a2a;
+        }
+
+        /* Estilo global */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+            padding: 2em;
+            text-align: center;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 1.5em;
+        }
+
+        footer {
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+            text-align: center;
+            padding: 1em;
+        }
+
+        /* Media Query para telas menores (mobile) */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            header, footer {
+                padding: 1.5em;
+            }
+
+            main {
+                padding: 1em;
+            }
+        }
+
+        /* Media Query para telas maiores (desktop) */
+        @media (min-width: 769px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            header, footer {
+                padding: 3em;
+            }
+
+            main {
+                padding: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Página Responsiva</h1>
+        <p>Exemplo de responsividade e cores usando CSS.</p>
+    </header>
+    <main>
+        <p>
+            Esta página usa media queries para ajustar o tamanho do texto com base na largura da tela.
+            Além disso, utiliza variáveis CSS para definir uma paleta de cores consistente.
+        </p>
+        <p>
+            Explore o layout em dispositivos diferentes para ver como ele se adapta!
+        </p>
+    </main>
+    <footer>
+        <p>© 2024 - Exemplo Responsivo Excercício CSS</p>
+    </footer>
+</body>
+</html>
